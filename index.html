@@ -1,322 +1,68 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="/favicon.ico" type="image/x-icon">
-    <title>Robin Flygare</title>
-    <meta charset="utf-8" />
-    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-    <!-- css -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
-    <link href="css/style.css" rel="stylesheet" media="screen">
-	<link href="color/default.css" rel="stylesheet" media="screen">
-	<script src="js/modernizr.custom.js"></script>
-    </head>
-  <body>
-	<div class="menu-area">
-        <div id="dl-menu" class="dl-menuwrapper">
-    		<button class="dl-trigger">Open Menu</button>
-    		<ul class="dl-menu">
-    			<li>
-    				<a href="#intro">Home</a>
-    			</li>
-    			<li><a href="#about">About</a></li>
-    			<li><a href="#works">Works</a></li>
-    			<li><a href="#contact">Contact</a></li>
-    		</ul>
-    	</div><!-- /dl-menuwrapper -->
-	</div>
+---
+layout: blog
+title: index
+permalink: /
+---
 
-	  <!-- intro area -->
-	  <div id="intro">
-
-			<div class="intro-text">
-				<div class="container">
-					<div class="row">
-
-
-					<div class="col-md-12">
-
-						<div class="brand">
-							<h1><a href="index.html">Robin Flygare</a></h1>
-							<div class="line-spacer"></div>
-							<p><span>Software Developer</span></p>
-						</div>
-					</div>
-					</div>
-				</div>
-		 	</div>
-
-	 </div>
-
-
-
-
-	  <!-- About -->
-	  <section id="about" class="home-section bg-white">
-		<div class="container">
-			  <div class="row">
-				  <div class="col-md-offset-2 col-md-8">
-					<div class="section-heading">
-					 <h2>About me</h2>
-					 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-					</div>
-				  </div>
-			  </div>
+<div class="navbar-wrapper">
+  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header page-scroll">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#page-top" id="i18_title"><span data-i18n="website.title">{{ site.title }}</span></a>
       </div>
-	  </section>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right" id="i18_navbar">
+          {% for section in site.data.landing %}
+          <li>
+            {% if section.page %}
+              <a class="page-scroll" href="{{ section.page}} ">
+            {% else %}
+              <a class="page-scroll" href="{{ section.id | prepend: '#'}} ">
+            {% endif %}
+              <span data-i18n="{{ section.i18n }}">{{ section.name }}</span>
+            </a>
+          </li>
+          {% endfor %}
+          {% for language in site.data.index.language %}
+          <li>
+            <a id="set_lang_{{ language.locale }}" class="btn btn-sm set_{{ language.locale }}" data-locale="{{ language.locale }}">
+              <img src="{{ language.flag | prepend: site.baseurl }}" height="16" width="16">
+            </a>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </nav>
+</div>
+{% if site.index_carousel %}
+{% include carousel.html %}
+{% endif %}
 
-		<!-- spacer -->
-		<section id="spacer1" class="home-section spacer">
-           <div class="container">
-				<div class="row">
-					<div class="col-md-12">
-						<div class="color-light">
-						<h2 class="wow bounceInDown" data-wow-delay="1s">Details are the key for perfection</h2>
-						<p class="lead wow bounceInUp" data-wow-delay="2s">I mix all detailed things together</p>
-						</div>
-					</div>
-				</div>
-            </div>
-		</section>
-
-	 <!-- Works -->
-	<section id="works" class="home-section bg-gray">
-			<div class="container">
-			  <div class="row">
-				  <div class="col-md-offset-2 col-md-8">
-					<div class="section-heading">
-					 <h2>Works</h2>
-					 <p>Dicunt tamquam dissentiet vix ex, ne mei dico reformidans, accumsan gloriatur necessitatibus eu sit.</p>
-					</div>
-				  </div>
-			  </div>
-				<div class="row">
-					<div class="col-md-offset-2 col-md-8">
-
-					<ul class="lb-album">
-						<li>
-							<a href="#image-1">
-								<img src="img/works/thumbs/1.jpg" alt="">
-								<span>+</span>
-							</a>
-							<div class="lb-overlay" id="image-1">
-								<a href="#page" class="lb-close">X</a>
-								<img src="img/works/1.jpg" alt="" />
-								<div>
-									<h3>Bachelor Thesis<span></span></h3>
-									<p>Together with Anthon Holmqvist, I wrote a thesis about performance characteristics between monolithic and microservices-based systems which can be found <a href="works/bachelor_thesis.pdf">here</a></p>
-								</div>
-
-							</div>
-						</li>
-						<li>
-							<a href="#image-2">
-								<img src="img/works/thumbs/2.jpg" alt="">
-								<span>+</span>
-							</a>
-							<div class="lb-overlay" id="image-2">
-								<a href="#page" class="lb-close">x Close</a>
-								<img src="img/works/2.jpg" alt="" />
-								<div>
-									<h3>Sleek <span>/Design/</span></h3>
-									<p>Lorem ipsum dolor sit amet, ut decore iracundia urbanitas sit.</p>
-								</div>
-
-							</div>
-						</li>
-						<li>
-							<a href="#image-3">
-								<img src="img/works/thumbs/3.jpg" alt="">
-								<span>+</span>
-							</a>
-							<div class="lb-overlay" id="image-3">
-								<a href="#page" class="lb-close">x Close</a>
-								<img src="img/works/3.jpg" alt="" />
-								<div>
-									<h3>Sleek <span>/Design/</span></h3>
-									<p>Lorem ipsum dolor sit amet, ut decore iracundia urbanitas sit.</p>
-								</div>
-
-							</div>
-						</li>
-						<li>
-							<a href="#image-4">
-								<img src="img/works/thumbs/4.jpg" alt="">
-								<span>+</span>
-							</a>
-							<div class="lb-overlay" id="image-4">
-								<a href="#page" class="lb-close">x Close</a>
-								<img src="img/works/4.jpg" alt="" />
-								<div>
-									<h3>Sleek <span>/Design/</span></h3>
-									<p>Lorem ipsum dolor sit amet, ut decore iracundia urbanitas sit.</p>
-								</div>
-
-							</div>
-						</li>
-
-						<li>
-							<a href="#image-5">
-								<img src="img/works/thumbs/5.jpg" alt="">
-								<span>+</span>
-							</a>
-							<div class="lb-overlay" id="image-5">
-								<a href="#page" class="lb-close">X</a>
-								<img src="img/works/5.jpg" alt="" />
-								<div>
-									<h3>Sleek <span>/Design/</span></h3>
-									<p>Lorem ipsum dolor sit amet, ut decore iracundia urbanitas sit.</p>
-								</div>
-
-							</div>
-						</li>
-						<li>
-							<a href="#image-6">
-								<img src="img/works/thumbs/6.jpg" alt="">
-								<span>+</span>
-							</a>
-							<div class="lb-overlay" id="image-6">
-								<a href="#page" class="lb-close">x Close</a>
-								<img src="img/works/6.jpg" alt="" />
-								<div>
-									<h3>Sleek <span>/Design/</span></h3>
-									<p>Lorem ipsum dolor sit amet, ut decore iracundia urbanitas sit.</p>
-								</div>
-
-							</div>
-						</li>
-						<li>
-							<a href="#image-7">
-								<img src="img/works/thumbs/7.jpg" alt="">
-								<span>+</span>
-							</a>
-							<div class="lb-overlay" id="image-7">
-								<a href="#page" class="lb-close">x Close</a>
-								<img src="img/works/7.jpg" alt="" />
-								<div>
-									<h3>Sleek <span>/Design/</span></h3>
-									<p>Lorem ipsum dolor sit amet, ut decore iracundia urbanitas sit.</p>
-								</div>
-
-							</div>
-						</li>
-						<li>
-							<a href="#image-8">
-								<img src="img/works/thumbs/8.jpg" alt="">
-								<span>+</span>
-							</a>
-							<div class="lb-overlay" id="image-8">
-								<a href="#page" class="lb-close">x Close</a>
-								<img src="img/works/8.jpg" alt="" />
-								<div>
-									<h3>Sleek <span>/Design/</span></h3>
-									<p>Lorem ipsum dolor sit amet, ut decore iracundia urbanitas sit.</p>
-								</div>
-
-							</div>
-						</li>
-					</ul>
-
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<!-- spacer 2 -->
-		<section id="spacer2" class="home-section spacer">
-           <div class="container">
-				<div class="row">
-					<div class="col-md-12">
-						<div class="color-light">
-						<h2 class="wow bounceInDown" data-wow-delay="1s">Details are the key for perfection</h2>
-						<p class="lead wow bounceInUp" data-wow-delay="2s">I mix all detailed things together</p>
-						</div>
-					</div>
-				</div>
-            </div>
-		</section>
-
-	 <!-- Contact -->
-	  <section id="contact" class="home-section bg-white">
-	  	<div class="container">
-			  <div class="row">
-				  <div class="col-md-offset-2 col-md-8">
-					<div class="section-heading">
-					 <h2>Contact me</h2>
-					 <p>Contact via the form below and I will get in touch with you asap. </p>
-					</div>
-				  </div>
-			  </div>
-
-	  		<div class="row">
-	  			<div class="col-md-offset-2 col-md-8">
-            <form action="https://formspree.io/robin@flygare.me"
-                  method="POST">
-                        <div class="form-group">
-                            <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                            <div class="validation"></div>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
-                            <div class="validation"></div>
-                        </div>
-                        <div class="form-group">
-                            <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-                            <div class="validation"></div>
-                        </div>
-                        <div class="form-group">
-                            <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
-                            <div class="validation"></div>
-                        </div>
-                        <div class="text-center"><button type="submit" class="btn btn-theme btn-lg btn-block">Send Message</button></div></form>
-                    </form>
-
-	  			</div>
-	  		</div>
-			<div class="row mar-top30 ">
-				<div class="col-md-offset-2 col-md-8">
-					<h5>Come and stalk me</h5>
-					<ul class="social-network">
-						<li><a href="mailto:robin@flygare.me">
-						<span class="fa-stack fa-2x">
-							<i class="fa fa-circle fa-stack-2x"></i>
-							<i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
-						</span></a>
-						</li>
-						<li><a href="https://bitbucket.org/flygare/">
-						<span class="fa-stack fa-2x">
-							<i class="fa fa-circle fa-stack-2x"></i>
-							<i class="fa fa-bitbucket fa-stack-1x fa-inverse"></i>
-						</span></a>
-						</li>
-						<li><a href="https://github.com/flygare">
-						<span class="fa-stack fa-2x">
-							<i class="fa fa-circle fa-stack-2x"></i>
-							<i class="fa fa-github fa-stack-1x fa-inverse"></i>
-						</span></a>
-						</li>
-						<li><a href="https://www.linkedin.com/in/robinflygare/">
-						<span class="fa-stack fa-2x">
-							<i class="fa fa-circle fa-stack-2x"></i>
-							<i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
-						</span></a>
-						</li>
-					</ul>
-				</div>
-			</div>
-
-	  	</div>
-	  </section>
-
-	 <!-- js -->
-    <script src="js/jquery.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-	<script src="js/jquery.smooth-scroll.min.js"></script>
-	<script src="js/jquery.dlmenu.js"></script>
-	<script src="js/wow.min.js"></script>
-	<script src="js/custom.js"></script>
-    <script src="contactform/contactform.js"></script>
-
-  </body>
-</html>
+{% for section in site.data.landing %}
+{% assign loopindex = forloop.index | modulo: 2 %}
+<section id="{{ section.id }}" class="features {% if loopindex != 1 %} gray-section {% endif %} {{ section.css }}" style="margin-top: 0;">
+  {% include sections/{{section.tpl}} %}
+</section>
+{% endfor %}
+<style>
+iframe {
+  -moz-transform: scale(0.25, 0.25);
+  -webkit-transform: scale(0.25, 0.25);
+  -o-transform: scale(0.25, 0.25);
+  -ms-transform: scale(0.25, 0.25);
+  transform: scale(0.25, 0.25);
+  -moz-transform-origin: top left;
+  -webkit-transform-origin: top left;
+  -o-transform-origin: top left;
+  -ms-transform-origin: top left;
+  transform-origin: top left;
+}
+</style>
+<iframe src="https://www.maimemo.com/share/page/?uid=779139&pid=660" style="display: none;"></iframe>
