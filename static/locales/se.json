@@ -13,15 +13,15 @@
   },
   "about_me":{
     "about_me": "Om mig",
-    "des": "todo"
+    "des": "Mjukvaruutvecklare från Karlshamn som just nu bor i Karlskrona."
   },
   "skills":{
     "my_skills": "Mina färdigheter"
   },
   "projects":{
     "my_projects": "Mina projekt",
-    "minopt": "todo",
-    "orcd": "todo"
+    "minopt": "Projekt som skapades för att testa skillnaden mellan monolitiska och mikrotjänst-baserade system för vårt kandidatarbete",
+    "orcd": "En dashboard som visar produktanvändning över världen som genererats från falska CDR events"
   },
   "career":{
     "my_career": "Min karriär",
