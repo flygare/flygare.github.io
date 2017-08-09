@@ -14,3 +14,10 @@
   repo: Minopt
   img: /static/assets/img/landing/minopt.png
   desc: Project made to test performance differences between monolithic and microservices-based systems for our bachelor thesis
+
+- name: Dotfiles
+  i18n: dotfiles
+  gh_user: flygare
+  repo: dotfiles
+  img: /static/assets/img/landing/minopt.png
+  desc: My MacOS/linux dotfiles

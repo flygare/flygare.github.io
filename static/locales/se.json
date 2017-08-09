@@ -21,7 +21,8 @@
   "projects":{
     "my_projects": "Mina projekt",
     "minopt": "Projekt som skapades för att testa skillnaden mellan monolitiska och mikrotjänst-baserade system för vårt kandidatarbete",
-    "orcd": "En dashboard som visar produktanvändning över världen som genererats från falska CDR events"
+    "orcd": "En dashboard som visar produktanvändning över världen som genererats från falska CDR events",
+    "dotfiles": "Mina dotfiles för MacOS och linux"
   },
   "career":{
     "my_career": "Min karriär",

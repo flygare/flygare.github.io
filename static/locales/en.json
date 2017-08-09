@@ -21,7 +21,8 @@
   "projects":{
     "my_projects": "My Projects",
     "minopt": "Project made to test performance differences between monolithic and microservices-based systems for our bachelor thesis",
-    "orcd": "An operational dashboard visualizing worldwide roaming usage and and product usage from generated fake CDR events"
+    "orcd": "An operational dashboard visualizing worldwide roaming usage and and product usage from generated fake CDR events",
+    "dotfiles": "My MacOS/Linux dotfiles"
   },
   "career":{
     "my_career": "My Career",
