@@ -15,6 +15,20 @@
   icon: fa-coffee
 
 - name:
+    detail: IEEE
+    i18n: ieee
+  desc:
+    detail: Article submitted to IEEE Software about microservices
+    i18n: ieee_desc
+  date:
+    detail: Aug. 2017
+    i18n: ieee_date
+  job:
+    detail: Journal submission
+    i18n: ieee_job
+  icon: fa-file-pdf-o
+
+- name:
     detail: Qvantel
     i18n: qvantel
   desc:
