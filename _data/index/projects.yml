@@ -19,5 +19,5 @@
   i18n: dotfiles
   gh_user: flygare
   repo: dotfiles
-  img: /static/assets/img/landing/minopt.png
+  img: /static/assets/img/landing/dotfiles.png
   desc: My MacOS/linux dotfiles
