@@ -13,7 +13,7 @@
   },
   "about_me":{
     "about_me": "About Me",
-    "des": "I am a software developer from Karlshamn, currently living in Karlskrona, Sweden."
+    "des": "I am a software developer from Karlshamn, currently living in Växjö, Sweden."
   },
   "skills":{
     "my_skills": "My Skills"
@@ -26,6 +26,10 @@
   },
   "career":{
     "my_career": "My Career",
+    "ieee": "IEEE",
+    "ieee_desc": "Article submitted to IEEE Software about microservices",
+    "ieee_date": "Aug. 2017",
+    "ieee_job": "Journal submission",
     "ist": "IST",
     "ist_desc": "I started at IST",
     "ist_date": "Aug. 2017",

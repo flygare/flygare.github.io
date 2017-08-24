@@ -13,7 +13,7 @@
   },
   "about_me":{
     "about_me": "Om mig",
-    "des": "Mjukvaruutvecklare från Karlshamn som just nu bor i Karlskrona."
+    "des": "Mjukvaruutvecklare från Karlshamn som just nu bor i Växjö."
   },
   "skills":{
     "my_skills": "Mina färdigheter"
@@ -26,6 +26,10 @@
   },
   "career":{
     "my_career": "Min karriär",
+    "ieee": "IEEE",
+    "ieee_desc": "Skickade in en journalartikel till IEEE om microtjänstbaserade system",
+    "ieee_date": "Aug. 2017",
+    "ieee_job": "Journal artikel",
     "ist": "IST",
     "ist_desc": "Började jobba på IST",
     "ist_date": "Aug. 2017",
