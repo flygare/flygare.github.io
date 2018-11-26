@@ -4,13 +4,13 @@
     detail: IST
     i18n: ist
   desc:
-    detail: I started at IST
+    detail: I started working at IST, working with things such as Java, Vue.js, AngularJS and GraphQL(Apollo)
     i18n: ist_desc
   date:
     detail: Aug. 2017
     i18n: ist_date
   job:
-    detail: Java Developer
+    detail: Software Developer
     i18n: ist_job
   icon: fa-coffee
 
