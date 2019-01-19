@@ -1,67 +1,417 @@
----
-layout: blog
-title: index
-permalink: /
----
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+	<meta name="generator" content="Hugo 0.53" />
+        <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="chrome=1">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="referrer" content="no-referrer">
 
-<div class="navbar-wrapper">
-  <nav class="navbar navbar-default navbar-fixed-top navbar-scroll" role="navigation">
-    <div class="container">
-      <div class="navbar-header page-scroll">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="#page-top" id="i18_title"><span data-i18n="website.title">{{ site.title }}</span></a>
-      </div>
-      <div id="navbar" class="navbar-collapse collapse">
-        <ul class="nav navbar-nav navbar-right" id="i18_navbar">
-          {% for section in site.data.landing %}
-          <li>
-            {% if section.page %}
-              <a class="page-scroll" href="{{ section.page}} ">
-            {% else %}
-              <a class="page-scroll" href="{{ section.id | prepend: '#'}} ">
-            {% endif %}
-              <span data-i18n="{{ section.i18n }}">{{ section.name }}</span>
-            </a>
-          </li>
-          {% endfor %}
-          {% for language in site.data.index.language %}
-          <li>
-            <a id="set_lang_{{ language.locale }}" class="btn btn-sm set_{{ language.locale }}" data-locale="{{ language.locale }}">
-              <img src="{{ language.flag | prepend: site.baseurl }}" height="16" width="16">
-            </a>
-          </li>
-          {% endfor %}
-        </ul>
-      </div>
-    </div>
-  </nav>
+<title>
+Robin Flygare | Software developer
+</title>
+
+
+  <link href="https:///flygare.me/index.xml" rel="alternate" type="application/rss+xml" title="Robin Flygare | Software developer" />
+
+
+        <meta property="og:title" content="Robin Flygare | Software developer" />
+<meta property="og:type" content="website" />
+<meta property="og:description" content=""/>
+<meta property="og:url" content="https:///flygare.me/"/>
+<meta property="og:site_name" content="Robin Flygare | Software developer"/>
+
+
+
+
+<meta property="og:image" content="https://flygare.me/home/avatar.jpg"/>
+
+
+
+
+        
+
+        
+
+
+
+
+
+<link rel="stylesheet" href="https://flygare.me" integrity="" media="screen">
+
+
+
+
+
+        
+
+
+<link rel="stylesheet" href="https://flygare.me/styles/owlCarousel.min.b1f26e29c43c61fe8b5a6f225b4ee7c5f969a7b33cfe512706271e07246d93d1.css" integrity="sha256-sfJuKcQ8Yf6LWm8iW07nxflpp7M8/lEnBiceByRtk9E=" media="screen">
+
+    </head>
+    <body>
+        <section id="top" class="section">
+            
+            <div class="hero is-large">
+                
+                <div class="hero-body">
+                    <div class="container has-text-centered">
+                        
+                        <h1 class="bold-title fade-in one">
+                            Robin Flygare
+                        </h1>
+                        <div class="subtitle is-3 fade-in two">
+                            <p>Fullstack developer currently located at Växjö, Sweden</p>
+
+                        </div>
+                        
+                        
+                        <div class="fade-in three">
+                            <div class="social-icons">
+    
+    <a href="https://github.com/flygare" >
+        <i class="fab fa-github"></i>
+    </a>
+    
+    <a href="https://linkedin.com/robinflygare" >
+        <i class="fab fa-linkedin-in"></i>
+    </a>
+    
+    <a href="mailto:robin@flygare.me" >
+        <i class="fas fa-envelope"></i>
+    </a>
+    
 </div>
-{% if site.index_carousel %}
-{% include carousel.html %}
-{% endif %}
 
-{% for section in site.data.landing %}
-{% assign loopindex = forloop.index | modulo: 2 %}
-<section id="{{ section.id }}" class="features {% if loopindex != 1 %} gray-section {% endif %} {{ section.css }}" style="margin-top: 0;">
-  {% include sections/{{section.tpl}} %}
-</section>
-{% endfor %}
-<style>
-iframe {
-  -moz-transform: scale(0.25, 0.25);
-  -webkit-transform: scale(0.25, 0.25);
-  -o-transform: scale(0.25, 0.25);
-  -ms-transform: scale(0.25, 0.25);
-  transform: scale(0.25, 0.25);
-  -moz-transform-origin: top left;
-  -webkit-transform-origin: top left;
-  -o-transform-origin: top left;
-  -ms-transform-origin: top left;
-  transform-origin: top left;
-}
-</style>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+            </div>
+            
+
+            
+            <div class="fade-in three">
+                
+                
+<div class="container">
+    <hr>
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        
+        <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false" >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+        <div class="navbar-menu has-content-centered" id="navMenu">
+            
+            
+            
+            
+
+            
+            
+            
+            <a class="navbar-item" href="#about">About</a>
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            <a class="navbar-item" href="#projects">Projects</a>
+            
+            
+            
+
+            
+            
+            
+            
+
+            
+            
+            <a class="navbar-item" href="#contact">Contact</a>
+            
+            
+
+            
+            
+            
+
+            
+            
+        </div>
+    </nav>
+    <hr>
+</div>
+
+
+
+                
+                
+                
+                
+                
+                <div class="section" id="about">
+                    <div class="container">
+                        <h2 class="title is-2 has-text-centered">About</h2>
+                        
+                        <div class="columns">
+                            <div class="column is-one-third has-text-centered">
+                                
+                                
+                                <img class="img-responsive avatar" src="https://flygare.me/home/avatar_hu7db8f90fce1c4920f949c9b5097dc192_107633_320x0_resize_q75_box.jpg" alt="avatar.jpg">
+                                
+                                
+                            </div>
+                            <div class="markdown column">
+                                <p>Graduated BTH with a bachelors degree in Software Engineering in 2017. Interested in just about everything that has to do with software and always on the lookout for new things to learn.</p>
+
+<p>Currently working to make the school hip with technologies such as GraphQL, Vue and Java at <a href="https://www.ist.com/">IST</a>. Before IST I spent the summer working at <a href="https://qvantel.com">Qvantel</a>, creating a PoC using primarily Scala, Grafana and the Elastic stack.</p>
+
+<p>Previously worked on multiple school projects againsts customers Like Qvantel (which you can read more about in the Orcd project section), <a href="https://softhouse.se">Softhouse</a> creating an cable-viewing iOS app and <a href="https://www.bth.se">BTH</a> creating an indoor navigation app for Google Glass.</p>
+
+<p>If you are even more interested in reading about my experiences, you can check out my <a href="https://github.com/flygare/flygare.github.io/raw/master/CV.pdf">CV</a></p>
+
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                    
+
+                </div>
+                <div class="container"><hr></div>
+                
+                
+                
+                
+                
+                
+<div class="section" id="projects">
+    
+    <div class="container">
+        <h2 class="title is-2 has-text-centered">
+            Projects
+        </h2>
+        <div class="section">
+            <div class="columns is-multiline">
+                
+                
+                
+                
+                
+                
+                <div class="column is-one-third">
+                    <div class="card" data-target="#project-0">
+                        <div class="card-image">
+                            <figure class="image is-3by2">
+                                <a  href="https://github.com/flygare/dotfiles" >
+                                    
+                                </a>
+                            </figure>
+                        </div>
+                        <div class="card-content has-text-centered top-pad">
+                            <a  href="https://github.com/flygare/dotfiles" >
+                                Dotfiles
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                
+                
+                <div class="column is-one-third">
+                    <div class="card" data-target="#project-1">
+                        <div class="card-image">
+                            <figure class="image is-3by2">
+                                <a >
+                                    
+                                </a>
+                            </figure>
+                        </div>
+                        <div class="card-content has-text-centered top-pad">
+                            <a >
+                                Minopt
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                
+                
+                <div class="column is-one-third">
+                    <div class="card" data-target="#project-2">
+                        <div class="card-image">
+                            <figure class="image is-3by2">
+                                <a >
+                                    
+                                </a>
+                            </figure>
+                        </div>
+                        <div class="card-content has-text-centered top-pad">
+                            <a >
+                                Orcd
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+    
+    
+    
+    
+    
+    
+    <div class="modal" id="project-1">
+        <div class="modal-background"></div>
+        <div class="modal-card">
+            
+            <header class="modal-card-header bottom-pad">
+                <p class="modal-card-title has-text-centered">Minopt</p>
+            </header>
+            
+
+            
+
+            
+            <section class="modal-card-body markdown">
+                
+
+<h2 id="microservice-architecture-vs-monolithic-architecture">Microservice architecture vs. monolithic architecture</h2>
+
+<p>Scala project made to test performance differences between monolithic and microservices-based systems for our bachelor thesis. Made together with <a href="https://holmqvist.xyz">Anthon Holmqvist</a></p>
+
+<p>The Bachelor thesis at Blekinge Institute of Technoloy can be found <a href="http://urn.kb.se/resolve?urn=urn:nbn:se:bth-14888">here</a> and the project <a href="https://github.com/flygare/Minopt">here</a>.</p>
+
+            </section>
+            
+        </div>
+        <button class="modal-close is-large" aria-label="close" data-target="#project-1"></button>
+    </div>
+    
+    
+    
+    <div class="modal" id="project-2">
+        <div class="modal-background"></div>
+        <div class="modal-card">
+            
+            <header class="modal-card-header bottom-pad">
+                <p class="modal-card-title has-text-centered">Orcd</p>
+            </header>
+            
+
+            
+
+            
+            <section class="modal-card-body markdown">
+                <p><em>orcD</em>, or <em>Operational Rated CDR Dashboard</em> is a proof of concept to visualize rated <a href="https://en.wikipedia.org/wiki/Call_detail_record">CDR&rsquo;s</a> on a heat and world map. It includes a HeatMap for visualizing CDR&rsquo;s that has gone through some rating/billing system which has a product tied to it. The GeoMap visualizes rated CDR&rsquo;s which has a roaming status in the record.</p>
+
+<p>The project was made at the request of <a href="https://www.qvantel.com">Qvantel</a> and was later made open source.</p>
+
+<p>For this project I was the CI-master and a developer in the backend team.</p>
+
+<p>Check it out over at <a href="https://github.com/qvantel/orcd">Github</a></p>
+
+            </section>
+            
+        </div>
+        <button class="modal-close is-large" aria-label="close" data-target="#project-2"></button>
+    </div>
+    
+    
+    
+
+</div>
+
+<div class="container"><hr></div>
+
+
+                
+                
+
+                
+                
+                <div class="section" id="contact">
+                    <div class="container has-text-centered">
+                        <h2 class="title is-2">Contact</h2>
+                        <div class="markdown">
+                            <p>If you didn&rsquo;t manage to contact me by the preffered ways of smoke signals or posting a cat picture on reddit, here are some alternative ways of contacting me</p>
+
+                        </div>
+                        
+                        
+                        <h3 class="subtitle is-3 has-text-centered top-pad">
+                            <a href="mailto:robin@flygare.me">robin@flygare.me</a>
+                        </h3>
+                        
+                        <div class="social-icons">
+    
+    <a href="https://github.com/flygare" >
+        <i class="fab fa-github"></i>
+    </a>
+    
+    <a href="https://linkedin.com/robinflygare" >
+        <i class="fab fa-linkedin-in"></i>
+    </a>
+    
+    <a href="mailto:robin@flygare.me" >
+        <i class="fas fa-envelope"></i>
+    </a>
+    
+</div>
+
+                    </div>
+                    
+                    
+
+                </div>
+                <div class="container"><hr></div>
+                
+                
+                
+
+                <div class="section" id="footer">
+    <div class="container has-text-centered">
+    
+        <span class="footer-text">
+            
+        </span>
+    
+    </div>
+</div>
+
+            </div>
+        </section>
+        
+        
+
+
+<script src="https://flygare.me/js/bundle.baa2874a80b328e7dec720d3a90efc6efd25ccdf1611f37d9571354e88987590.js" integrity="sha256-uqKHSoCzKOfexyDTqQ78bv0lzN8WEfN9lXE1ToiYdZA="></script>
+
+
+
+        
+
+
+<script src="https://flygare.me/js/bundleOwlCarousel.cba358484a4a50bbc9c265ab71727cbcd15381bbb8cecdbcba357cb629f4e9c4.js" integrity="sha256-y6NYSEpKULvJwmWrcXJ8vNFTgbu4zs28ujV8tin06cQ="></script>
+
+
+        
+    </body>
+</html>

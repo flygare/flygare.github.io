@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Robin Flygare | Software developer</title>
+    <link>https:///flygare.me/</link>
+    <description>Recent content on Robin Flygare | Software developer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 19 Jan 2019 10:40:43 +0100</lastBuildDate>
+    
+	<atom:link href="https:///flygare.me/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Dotfiles</title>
+      <link>https:///flygare.me/projects/dotfiles/</link>
+      <pubDate>Sat, 19 Jan 2019 10:40:43 +0100</pubDate>
+      
+      <guid>https:///flygare.me/projects/dotfiles/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Minopt</title>
+      <link>https:///flygare.me/projects/minopt/</link>
+      <pubDate>Sat, 19 Jan 2019 10:40:25 +0100</pubDate>
+      
+      <guid>https:///flygare.me/projects/minopt/</guid>
+      <description>Microservice architecture vs. monolithic architecture Scala project made to test performance differences between monolithic and microservices-based systems for our bachelor thesis. Made together with Anthon Holmqvist
+The Bachelor thesis at Blekinge Institute of Technoloy can be found here and the project here.</description>
+    </item>
+    
+    <item>
+      <title>Orcd</title>
+      <link>https:///flygare.me/projects/orcd/</link>
+      <pubDate>Sat, 19 Jan 2019 10:12:40 +0100</pubDate>
+      
+      <guid>https:///flygare.me/projects/orcd/</guid>
+      <description>orcD, or Operational Rated CDR Dashboard is a proof of concept to visualize rated CDR&amp;rsquo;s on a heat and world map. It includes a HeatMap for visualizing CDR&amp;rsquo;s that has gone through some rating/billing system which has a product tied to it. The GeoMap visualizes rated CDR&amp;rsquo;s which has a roaming status in the record.
+The project was made at the request of Qvantel and was later made open source.</description>
+    </item>
+    
+    <item>
+      <title>Robin Flygare</title>
+      <link>https:///flygare.me/home/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https:///flygare.me/home/</guid>
+      <description>Fullstack developer currently located at Växjö, Sweden</description>
+    </item>
+    
+  </channel>
+</rss>
