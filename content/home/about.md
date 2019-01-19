@@ -11,4 +11,4 @@ Currently working to make the school hip with technologies such as GraphQL, Vue 
 
 Previously worked on multiple school projects againsts customers Like Qvantel (which you can read more about in the Orcd project section), [Softhouse](https://softhouse.se) creating an cable-viewing iOS app and [BTH](https://www.bth.se) creating an indoor navigation app for Google Glass.
 
-If you are even more interested in reading about my experiences, you can check out my [CV](https://github.com/flygare/flygare.github.io/raw/dev/CV.pdf)
+If you are even more interested in reading about my experiences, you can check out my [CV](https://drive.google.com/open?id=1lA4RrDRBajLKJJ6nS2ju21qSIGlzgkBx)
