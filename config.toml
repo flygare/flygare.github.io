@@ -14,7 +14,7 @@ theme = "introduction"
         icon  = "github" # icon name without the 'fa-'
         icon_pack = "fab"
     [[params.social]]
-        url   = "https://linkedin.com/robinflygare"
+        url   = "https://linkedin.com/in/robinflygare"
         icon  = "linkedin-in" # icon name without the 'fa-'
         icon_pack = "fab"
     [[params.social]]
