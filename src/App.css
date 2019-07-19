@@ -38,17 +38,18 @@
 
 .this-is {
   text-align: left;
-  text-transform: uppercase;
-  font-size: 20px;
+  font-size: 22px;
   color: #89e393;
   font-weight: lighter;
+  margin-bottom: 15px;
 }
 
 .name {
-  font-size: 40px;
+  font-size: 73px;
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 2px;
+  margin-left: -4px;
 }
 
 .nav {
@@ -131,7 +132,6 @@ p {
   letter-spacing: 1px;
   font-weight: lighter;
   line-height: 1.5;
-  margin-bottom: 0;
 }
 
 .legal {
