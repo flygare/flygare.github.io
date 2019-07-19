@@ -1,26 +1,59 @@
 import React from "react";
-import logo from "./logo.svg";
+//import logo from "./logo.svg";
 import "./App.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
+import { Link } from "react-scroll";
 
 function App() {
   return (
     <div className="App">
       <ul className="nav">
-        <li class="active">
-          <a href="work.html">About</a>
+        <li>
+          <Link
+            className="nav-link"
+            activeClass="active"
+            to="about"
+            spy={true}
+            smooth={true}
+            offset={0}
+            duration={500}
+          >
+            About
+          </Link>
         </li>
         <li>
-          <a href="play.html">Work</a>
+          <Link
+            className="nav-link"
+            activeClass="active"
+            to="work"
+            spy={true}
+            smooth={true}
+            offset={0}
+            duration={500}
+          >
+            Work
+          </Link>
         </li>
         <li>
-          <a href="contact.html">Contact</a>
+          <Link
+            className="nav-link"
+            activeClass="active"
+            to="contact"
+            spy={true}
+            smooth={true}
+            offset={0}
+            duration={500}
+          >
+            Contact
+          </Link>
         </li>
       </ul>
       <header className="App-header">
         <div className="content">
-          <div className="about">
-            <div class="name">Robin Flygare</div>
-            <div class="this-is">Developer | UX | Blah ...</div>
+          <div id="about">
+            <div className="name">Robin Flygare</div>
+            <div className="this-is">Developer | UX | Blah ...</div>
             <p>
               Graduated at BTH with a bachelors degree in Software Engineering
               in 2017. Interested in just about everything that has to do with
@@ -42,8 +75,9 @@ function App() {
               Glass.
             </p>
           </div>
-          <div className="work">
-            <div class="subtitle">Work</div>
+
+          <div id="work">
+            <div className="subtitle">Work</div>
             <p>
               The standard Lorem Ipsum passage, used since the 1500s "Lorem
               ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
@@ -117,14 +151,24 @@ function App() {
               worse pains."
             </p>
           </div>
-          <div className="contact">
-            <div class="subtitle">Contact</div>
+          <div id="contact">
+            <div className="subtitle">Contact</div>
             <p>
               If you didn’t manage to contact me by the preferred ways of smoke
               signals or posting a cat picture on reddit, here are some
               alternative ways of contacting me
             </p>
+            <div className="links">
+              <a href="mailto:robin@flygare.me">robin@flygare.me</a>
+              <a href="https://github.com/flygare/">
+                <FontAwesomeIcon icon={faGithub} />
+              </a>
+              <a href="https://www.linkedin.com/in/robinflygare/">
+                <FontAwesomeIcon icon={faLinkedinIn} />
+              </a>
+            </div>
           </div>
+          <p className="legal">Robin Flygare © {new Date().getFullYear()} </p>
         </div>
       </header>
     </div>

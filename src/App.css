@@ -9,8 +9,6 @@
 }
 
 .App-header {
-  padding-top: 90px;
-  padding-bottom: 90px;
   background: linear-gradient(to bottom right, #39393c, #26252d);
   min-height: 100vh;
   display: flex;
@@ -25,13 +23,17 @@
 .content {
   width: 70%;
 }
-
+.nav-link {
+  opacity: 0.5;
+}
+.nav-link.active {
+  opacity: 1;
+}
 .subtitle {
   font-size: 28px;
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 2px;
-  margin-top: 200px;
 }
 
 .this-is {
@@ -57,6 +59,36 @@
   font-size: 18px;
 }
 
+.nav-link:hover {
+  border-bottom: 3px solid #89e393;
+  padding-bottom: 10px;
+  opacity: 1;
+}
+
+.nav-link.active {
+  border-bottom: 3px solid #89e393;
+  padding-bottom: 10px;
+  opacity: 1;
+}
+
+#about {
+  padding-top: 82px;
+}
+
+#work {
+  padding-top: 82px;
+  padding-bottom: 100px;
+}
+
+#contact {
+  padding-top: 82px;
+  padding-bottom: 90px;
+}
+
+.links a {
+  margin-right: 30px;
+}
+
 @media screen and (min-width: 1400px) {
   .nav {
     left: 0;
@@ -66,13 +98,6 @@
 .nav li {
   display: inline-block;
   margin: 0 1em;
-  opacity: 0.5;
-}
-
-.nav li:hover {
-  border-bottom: 3px solid #89e393;
-  padding-bottom: 10px;
-  opacity: 1;
 }
 
 .nav a {
@@ -94,6 +119,7 @@ a {
   font-weight: normal;
   text-decoration: none;
   color: #89e393;
+  cursor: pointer;
 }
 
 .content a:hover {
@@ -104,7 +130,15 @@ p {
   font-size: 16px;
   letter-spacing: 1px;
   font-weight: lighter;
-  line-height: 1.2;
+  line-height: 1.5;
+  margin-bottom: 0;
+}
+
+.legal {
+  margin-top: 0px;
+  font-size: 14px;
+  opacity: 0.5;
+  margin-bottom: 535px;
 }
 
 @keyframes App-logo-spin {
