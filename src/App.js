@@ -1,55 +1,59 @@
 import React from "react";
-//import logo from "./logo.svg";
-import "./App.css";
+import "./App.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 import { Link } from "react-scroll";
+import "flexboxgrid";
+import WorkSection from "./WorkSection";
 
 function App() {
   return (
     <div className="App">
-      <ul className="nav">
-        <li>
-          <Link
-            className="nav-link"
-            activeClass="active"
-            to="about"
-            spy={true}
-            smooth={true}
-            offset={0}
-            duration={500}
-          >
-            About
-          </Link>
-        </li>
-        <li>
-          <Link
-            className="nav-link"
-            activeClass="active"
-            to="work"
-            spy={true}
-            smooth={true}
-            offset={0}
-            duration={500}
-          >
-            Work
-          </Link>
-        </li>
-        <li>
-          <Link
-            className="nav-link"
-            activeClass="active"
-            to="contact"
-            spy={true}
-            smooth={true}
-            offset={0}
-            duration={500}
-          >
-            Contact
-          </Link>
-        </li>
-      </ul>
-      <header className="App-header">
+      <div className="nav">
+        <ul className="nav-ul">
+          <li>
+            <Link
+              className="nav-link"
+              activeClass="active"
+              to="about"
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={500}
+            >
+              About
+            </Link>
+          </li>
+          <li>
+            <Link
+              className="nav-link"
+              activeClass="active"
+              to="work"
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={500}
+            >
+              Work
+            </Link>
+          </li>
+          <li>
+            <Link
+              className="nav-link"
+              activeClass="active"
+              to="contact"
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={500}
+            >
+              Contact
+            </Link>
+          </li>
+        </ul>
+      </div>
+
+      <div className="App-header">
         <div className="content">
           <div id="about">
             <div className="this-is">Software Engineer</div>
@@ -68,17 +72,16 @@ function App() {
             </p>
             <p>
               Previously worked on multiple school projects with customers like
-              Qvantel (which you can read more about in the Orcd project
-              section), <a href="https://www.softhouse.se">Softhouse</a>{" "}
-              creating an cable-viewing iOS app and creating an indoor
-              navigation app at <a href="https://www.bth.se">BTH</a> for Google
-              Glass.
+              Qvantel (which you can read more about in the Orcd work section),{" "}
+              <a href="https://www.softhouse.se">Softhouse</a> creating an
+              cable-viewing iOS app and creating an indoor navigation app at{" "}
+              <a href="https://www.bth.se">BTH</a> for Google Glass.
             </p>
           </div>
 
           <div id="work">
             <div className="subtitle">Work</div>
-            <p>in progress</p>
+            <WorkSection />
           </div>
           <div id="contact">
             <div className="subtitle">Contact</div>
@@ -99,10 +102,8 @@ function App() {
           </div>
           <p className="legal">Robin Flygare © {new Date().getFullYear()} </p>
         </div>
-      </header>
+      </div>
     </div>
   );
 }
-
-// <img src={logo} className="App-logo" alt="logo" />
 export default App;
