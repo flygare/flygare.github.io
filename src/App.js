@@ -52,7 +52,7 @@ function App() {
       <header className="App-header">
         <div className="content">
           <div id="about">
-            <div className="this-is">Developer | UX | Blah ...</div>
+            <div className="this-is">Software Engineer</div>
             <div className="name">Robin Flygare</div>
             <p>
               Graduated at BTH with a bachelors degree in Software Engineering
