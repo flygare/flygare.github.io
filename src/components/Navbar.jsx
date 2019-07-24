@@ -1,6 +1,6 @@
-import React from "react";
-import "./Navbar.scss";
-import { Link } from "react-scroll";
+import React from 'react';
+import './Navbar.scss';
+import { Link } from 'react-scroll';
 
 export default class Navbar extends React.PureComponent {
   render() {
@@ -12,8 +12,8 @@ export default class Navbar extends React.PureComponent {
               className="nav-link"
               activeClass="active"
               to="about"
-              spy={true}
-              smooth={true}
+              spy
+              smooth
               offset={0}
               duration={500}
             >
@@ -25,8 +25,8 @@ export default class Navbar extends React.PureComponent {
               className="nav-link"
               activeClass="active"
               to="work"
-              spy={true}
-              smooth={true}
+              spy
+              smooth
               offset={0}
               duration={500}
             >
@@ -38,8 +38,8 @@ export default class Navbar extends React.PureComponent {
               className="nav-link"
               activeClass="active"
               to="contact"
-              spy={true}
-              smooth={true}
+              spy
+              smooth
               offset={0}
               duration={500}
             >

@@ -1,10 +1,10 @@
-import React from "react";
-import "./App.scss";
-import "flexboxgrid";
-import WorkSection from "./sections/WorkSection";
-import ContactSection from "./sections/ContactSection";
-import AboutSection from "./sections/AboutSection";
-import Navbar from "./components/Navbar";
+import React from 'react';
+import './App.scss';
+import 'flexboxgrid';
+import WorkSection from './sections/WorkSection';
+import ContactSection from './sections/ContactSection';
+import AboutSection from './sections/AboutSection';
+import Navbar from './components/Navbar';
 
 export default function App() {
   return (
@@ -23,7 +23,12 @@ export default function App() {
             <div className="subtitle">Contact</div>
             <ContactSection />
           </div>
-          <p className="legal">Robin Flygare © {new Date().getFullYear()} </p>
+          <p className="legal">
+Robin Flygare ©
+            {new Date().getFullYear()}
+            {' '}
+
+          </p>
         </div>
       </div>
     </div>

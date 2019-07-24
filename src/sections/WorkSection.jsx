@@ -1,24 +1,22 @@
-import React from "react";
-import "./WorkSection.scss";
-import Graph from "../components/Graph";
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import React from 'react';
+import './WorkSection.scss';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import Graph from '../components/Graph';
 
 export default class WorkSection extends React.PureComponent {
   constructor(props) {
     super(props);
     this.state = {
-      infoOpen: true
+      infoOpen: true,
     };
     this.toggleInfoOpen = this.toggleInfoOpen.bind(this);
   }
 
   toggleInfoOpen() {
-    this.setState(prevState => {
-      return {
-        infoOpen: !prevState.infoOpen
-      };
-    });
+    this.setState(prevState => ({
+      infoOpen: !prevState.infoOpen,
+    }));
   }
 
   render() {
@@ -35,14 +33,8 @@ export default class WorkSection extends React.PureComponent {
               )}
               {!infoOpen && (
                 <div className="project-info">
-                  <p>
-                    Proof of concept to visualize rated CDR's on a heat and
-                    world map.
-                  </p>
-                  <p>
-                    Main technologies: Scala, Angular, Grafana, Graphite,
-                    Cassandra, Spark
-                  </p>
+                  <p>Proof of concept to visualize rated CDRs on a heat and world map.</p>
+                  <p>Main technologies: Scala, Angular, Grafana, Graphite, Cassandra, Spark</p>
                   <a href="https://github.com/qvantel/orcd">
                     <FontAwesomeIcon icon={faGithub} />
                   </a>
@@ -53,7 +45,14 @@ export default class WorkSection extends React.PureComponent {
           <div className="col-xs-5">
             <div className="work-info-box">
               <div className="project-name">orcD</div>
-              <div className="read-more" onClick={this.toggleInfoOpen}>
+              <div
+                className="read-more"
+                onClick={this.toggleInfoOpen}
+                onKeyDown={this.toggleInfoOpen}
+                aria-checked={infoOpen}
+                role="switch"
+                tabIndex={0}
+              >
                 {infoOpen && <div>read more</div>}
                 {!infoOpen && <div>read less</div>}
               </div>
