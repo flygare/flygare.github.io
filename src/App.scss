@@ -1,0 +1,74 @@
+@import "config";
+
+.App {
+  box-sizing: border-box;
+  color: white;
+  display: table;
+  margin: 0 auto;
+}
+
+#root {
+  background: linear-gradient(to bottom right, $dark-gray, $darker-gray);
+}
+
+.App-header {
+  max-width: 850px;
+}
+
+.content {
+  margin-left: 68px;
+  @media only screen and (min-width: 600px) {
+    margin-left: 130px;
+  }
+
+  width: 73%;
+}
+
+.subtitle {
+  font-size: 28px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+#about {
+  padding-top: 82px;
+  p:last-child {
+    margin-bottom: 0;
+  }
+}
+
+#work {
+  padding-top: 82px;
+  padding-bottom: 100px;
+}
+
+#contact {
+  padding-top: 82px;
+  padding-bottom: 30px;
+}
+
+.content a:hover {
+  opacity: 0.6;
+}
+
+p {
+  font-size: 16px;
+  letter-spacing: 1px;
+  font-weight: lighter;
+  line-height: 1.5;
+}
+
+.legal {
+  margin-top: 0px;
+  font-size: 14px;
+  opacity: 0.5;
+  margin-bottom: 535px;
+}
+
+a {
+  font-weight: normal;
+  text-decoration: none;
+  color: $light-green;
+  cursor: pointer;
+}

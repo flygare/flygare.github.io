@@ -1,0 +1,39 @@
+.graph__wrapper {
+  width: inherit;
+  position: relative;
+
+  svg {
+    margin: 36px 0px 0px 15px;
+  }
+}
+
+// 1. Coordinates
+
+.coordinates {
+  position: absolute;
+  width: 97%;
+  padding: 10px;
+
+  span {
+    display: inline-block;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    height: 20px;
+    width: inherit;
+  }
+}
+
+// 2. Animation
+
+.path {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: dash 3s ease-in forwards;
+  animation-iteration-count: infinite;
+  animation-delay: 1s;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}

@@ -1,0 +1,55 @@
+@import "../config";
+
+.work-image-box {
+  min-height: 200px;
+  background: rgba(128, 209, 138, 0.1);
+  &:hover {
+    background: rgba(128, 209, 138, 0.5);
+  }
+}
+
+.work-info-box {
+  height: 200px;
+  background: rgba(255, 255, 255, 0.05);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 28px;
+  flex-direction: column;
+  text-align: center;
+  min-height: 200px;
+  height: 100%;
+}
+
+#work .row {
+  margin-top: 15px;
+}
+
+.project-name {
+  @media only screen and (min-width: 600px) {
+    font-size: 65px;
+  }
+}
+
+.read-more {
+  font-size: 20px;
+  margin-top: 10px;
+  color: $light-green;
+  cursor: pointer;
+  &:hover {
+    opacity: 0.6;
+  }
+}
+
+.project-info {
+  padding: 10px;
+  a {
+    color: white;
+    font-size: 22px;
+  }
+  p {
+    @media only screen and (max-width: 600px) {
+      font-size: 14px;
+    }
+  }
+}
