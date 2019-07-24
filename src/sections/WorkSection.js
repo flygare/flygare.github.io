@@ -8,31 +8,32 @@ export default class WorkSection extends React.PureComponent {
   constructor(props) {
     super(props);
     this.state = {
-      opened: true
+      infoOpen: true
     };
-    this.toggleBox = this.toggleBox.bind(this);
+    this.toggleInfoOpen = this.toggleInfoOpen.bind(this);
   }
 
-  toggleBox() {
-    const { opened } = this.state;
-    this.setState({
-      opened: !opened
+  toggleInfoOpen() {
+    this.setState(prevState => {
+      return {
+        infoOpen: !prevState.infoOpen
+      };
     });
   }
 
   render() {
-    const { opened } = this.state;
+    const { infoOpen } = this.state;
     return (
       <div>
         <div className="row">
           <div className="col-xs-7">
             <div className="work-image-box">
-              {opened && (
+              {infoOpen && (
                 <div>
                   <Graph />
                 </div>
               )}
-              {!opened && (
+              {!infoOpen && (
                 <div className="project-info">
                   <p>
                     Proof of concept to visualize rated CDR's on a heat and
@@ -52,9 +53,9 @@ export default class WorkSection extends React.PureComponent {
           <div className="col-xs-5">
             <div className="work-info-box">
               <div className="project-name">orcD</div>
-              <div className="read-more" onClick={this.toggleBox}>
-                {opened && <div>read more</div>}
-                {!opened && <div>read less</div>}
+              <div className="read-more" onClick={this.toggleInfoOpen}>
+                {infoOpen && <div>read more</div>}
+                {!infoOpen && <div>read less</div>}
               </div>
             </div>
           </div>
