@@ -35,6 +35,9 @@
   margin-top: 10px;
   color: #89e393;
   cursor: pointer;
+  &:hover {
+    opacity: 0.6;
+  }
 }
 
 .project-info {
