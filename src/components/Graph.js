@@ -1,7 +1,7 @@
 import React from "react";
 import "./Graph.scss";
 
-class Graph extends React.PureComponent {
+export default class Graph extends React.PureComponent {
   render() {
     return (
       <div className="graph__wrapper">
@@ -49,4 +49,3 @@ class Graph extends React.PureComponent {
     );
   }
 }
-export default Graph;

@@ -1,10 +1,10 @@
 import React from "react";
 import "./WorkSection.scss";
-import Graph from "./Graph";
+import Graph from "../components/Graph";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-class Macbook extends React.PureComponent {
+export default class WorkSection extends React.PureComponent {
   constructor(props) {
     super(props);
     this.state = {
@@ -75,4 +75,3 @@ class Macbook extends React.PureComponent {
     );
   }
 }
-export default Macbook;

@@ -1,3 +1,5 @@
+@import "config";
+
 .App {
   box-sizing: border-box;
   color: white;
@@ -6,42 +8,11 @@
 }
 
 #root {
-  background: linear-gradient(to bottom right, #39393c, #26252d);
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+  background: linear-gradient(to bottom right, $dark-gray, $darker-gray);
 }
 
 .App-header {
   max-width: 850px;
-}
-
-.nav ul {
-  text-align: center;
-  -webkit-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  transform: rotate(90deg);
-  margin-top: 30px;
-}
-
-.nav li {
-  transition: 0.3s ease;
-  -webkit-transition: 0.3s ease;
-  -moz-transition: 0.3s ease;
-  float: left;
-  position: absolute;
-}
-.nav li:nth-child(1) {
-  margin-left: 33px;
-}
-.nav li:nth-child(2) {
-  margin-left: 110px;
-}
-.nav li:nth-child(3) {
-  margin-left: 180px;
 }
 
 .content {
@@ -52,59 +23,12 @@
 
   width: 73%;
 }
-.nav-link {
-  opacity: 0.5;
-}
-.nav-link.active {
-  opacity: 1;
-}
+
 .subtitle {
   font-size: 28px;
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 2px;
-}
-
-.this-is {
-  text-align: left;
-  font-size: 22px;
-  color: #89e393;
-  font-weight: lighter;
-  margin-bottom: 15px;
-}
-
-.name {
-  font-size: 48px;
-  font-weight: bold;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  margin-left: -4px;
-  @media only screen and (min-width: 600px) {
-    font-size: 73px;
-  }
-}
-
-.nav {
-  font-size: 18px;
-  position: fixed;
-  z-index: 99999;
-  margin-left: 25px;
-  @media only screen and (min-width: 600px) {
-    margin-left: 0;
-    width: 130px;
-  }
-}
-
-.nav-link:hover {
-  border-bottom: 3px solid #89e393;
-  padding-bottom: 10px;
-  opacity: 1;
-}
-
-.nav-link.active {
-  border-bottom: 3px solid #89e393;
-  padding-bottom: 10px;
-  opacity: 1;
 }
 
 #about {
@@ -124,40 +48,6 @@
   padding-bottom: 30px;
 }
 
-.links a {
-  margin-right: 30px;
-}
-.links {
-  font-size: 28px;
-  line-height: 50px;
-}
-.nav li {
-  display: inline-block;
-  margin: 0 1em;
-}
-
-.nav a {
-  color: #89e393;
-}
-
-.nav li.active {
-  border-bottom: 3px solid #89e393;
-  padding-bottom: 10px;
-  opacity: 1;
-}
-
-.nav a {
-  text-decoration: none;
-  color: white;
-}
-
-a {
-  font-weight: normal;
-  text-decoration: none;
-  color: #89e393;
-  cursor: pointer;
-}
-
 .content a:hover {
   opacity: 0.6;
 }
@@ -174,4 +64,11 @@ p {
   font-size: 14px;
   opacity: 0.5;
   margin-bottom: 535px;
+}
+
+a {
+  font-weight: normal;
+  text-decoration: none;
+  color: $light-green;
+  cursor: pointer;
 }

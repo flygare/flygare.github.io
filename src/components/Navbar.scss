@@ -1,0 +1,61 @@
+@import "../config";
+
+.nav {
+  font-size: 18px;
+  position: fixed;
+  z-index: 99999;
+  margin-left: 25px;
+  @media only screen and (min-width: 600px) {
+    margin-left: 0;
+    width: 130px;
+  }
+
+  a {
+    text-decoration: none;
+    color: white;
+  }
+
+  ul {
+    text-align: center;
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+    margin-top: 30px;
+  }
+
+  li {
+    display: inline-block;
+    transition: 0.3s ease;
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+    position: absolute;
+    &:nth-child(1) {
+      margin-left: 33px;
+    }
+    &:nth-child(2) {
+      margin-left: 110px;
+    }
+    &:nth-child(3) {
+      margin-left: 180px;
+    }
+    &.active {
+      border-bottom: 3px solid $light-green;
+      padding-bottom: 10px;
+      opacity: 1;
+    }
+  }
+
+  .nav-link {
+    opacity: 0.5;
+    &.active {
+      border-bottom: 3px solid $light-green;
+      padding-bottom: 10px;
+      opacity: 1;
+    }
+    &:hover {
+      border-bottom: 3px solid $light-green;
+      padding-bottom: 10px;
+      opacity: 1;
+    }
+  }
+}
