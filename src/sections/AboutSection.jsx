@@ -31,7 +31,7 @@ export default class AboutSection extends React.PureComponent {
           {' '}
 creating an cable-viewing iOS app and
           creating an indoor navigation app at
-          <a href="https://www.bth.se">BTH</a>
+          <a href="https://www.bth.se"> BTH</a>
           {' '}
 for Google Glass.
         </p>
