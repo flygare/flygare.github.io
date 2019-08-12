@@ -39,7 +39,7 @@ export default function WorkSection() {
               tabIndex={0}
             >
               {infoOpen && <div>read more</div>}
-              {!infoOpen && <div>read less</div>}
+              {!infoOpen && <div>hide</div>}
             </div>
           </div>
         </div>
