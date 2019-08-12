@@ -45,7 +45,7 @@
 
 #contact {
   padding-top: 82px;
-  padding-bottom: 30px;
+  height: calc(100vh - 82px);
 }
 
 .content a:hover {
@@ -59,11 +59,9 @@ p {
   line-height: 1.5;
 }
 
-.legal {
-  margin-top: 0px;
+#legal {
   font-size: 14px;
   opacity: 0.5;
-  margin-bottom: 535px;
 }
 
 a {

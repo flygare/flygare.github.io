@@ -22,13 +22,11 @@ export default function App() {
           <div id="contact">
             <div className="subtitle">Contact</div>
             <ContactSection />
-          </div>
-          <p className="legal">
+            <p id="legal">
 Robin Flygare ©
-            {new Date().getFullYear()}
-            {' '}
-
-          </p>
+              {` ${new Date().getFullYear()}`}
+            </p>
+          </div>
         </div>
       </div>
     </div>
