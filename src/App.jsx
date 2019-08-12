@@ -5,6 +5,7 @@ import WorkSection from './sections/WorkSection';
 import ContactSection from './sections/ContactSection';
 import AboutSection from './sections/AboutSection';
 import Navbar from './components/Navbar';
+import './viewHeightScrollfix';
 
 export default function App() {
   return (
