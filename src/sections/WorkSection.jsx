@@ -50,10 +50,10 @@ export default function WorkSection() {
           </div>
         </div>
       </div>
-      <div className="row">
+      {/*       <div className="row">
         <div className="col-xs-5">
           <div className="work-info-box">
-            <div className="project-name">foodi</div>
+            <div className="project-name">project</div>
           </div>
         </div>
         <div className="col-xs-7">
@@ -61,7 +61,7 @@ export default function WorkSection() {
             <div className="work-info-box">coming soon</div>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }

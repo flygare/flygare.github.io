@@ -12,7 +12,7 @@ export default function ContactSection() {
         ways of contacting me
       </p>
       <div className="links">
-        <a href="mailto:robin@flygare.me">robin@flygare.me</a>
+        <a href="mailto:robin.flygare1@gmail.com">robin.flygare1@gmail.com</a>
         <a href="https://github.com/flygare/">
           <FontAwesomeIcon icon={faGithub} />
         </a>

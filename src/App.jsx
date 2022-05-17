@@ -17,7 +17,7 @@ export default function App() {
             <AboutSection />
           </div>
           <div id="work">
-            <div className="subtitle">Work</div>
+            <div className="subtitle">Projects</div>
             <WorkSection />
           </div>
           <div id="contact">
