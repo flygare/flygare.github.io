@@ -1,13 +1,13 @@
 ## Available Scripts
 
-### `yarn start`
+### `npm start`
 
-Runs the app in the development mode.
+Runs the app in the development mode
 
-### `yarn test`
+### `npm test`
 
 Runs the unit tests
 
-### `yarn deploy`
+### `npm deploy`
 
-Deploy the page to the interwebs!
+Deploy the page
