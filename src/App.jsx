@@ -1,11 +1,11 @@
-import React from 'react';
-import './App.scss';
-import 'flexboxgrid';
-import WorkSection from './sections/WorkSection';
-import ContactSection from './sections/ContactSection';
-import AboutSection from './sections/AboutSection';
-import Navbar from './components/Navbar';
-import './viewHeightScrollfix';
+import React from "react";
+import "./App.scss";
+import "flexboxgrid";
+import WorkSection from "./sections/WorkSection";
+import ContactSection from "./sections/ContactSection";
+import AboutSection from "./sections/AboutSection";
+import Navbar from "./components/Navbar";
+import "./viewHeightScrollfix";
 
 export default function App() {
   return (
@@ -23,10 +23,7 @@ export default function App() {
           <div id="contact">
             <div className="subtitle">Contact</div>
             <ContactSection />
-            <p id="legal">
-Robin Flygare ©
-              {` ${new Date().getFullYear()}`}
-            </p>
+            <p id="legal">Robin Flygare ©{` ${new Date().getFullYear()}`}</p>
           </div>
         </div>
       </div>

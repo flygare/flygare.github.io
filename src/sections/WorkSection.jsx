@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
-import './WorkSection.scss';
-import { faGithub } from '@fortawesome/free-brands-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import Graph from '../components/Graph';
+import React, { useState } from "react";
+import "./WorkSection.scss";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Graph from "../components/Graph";
 
 export default function WorkSection() {
   const [infoOpen, setInfoOpen] = useState(true);
@@ -18,8 +18,14 @@ export default function WorkSection() {
             )}
             {!infoOpen && (
               <div className="project-info">
-                <p>Proof of concept to visualize rated CDRs on a heat and world map.</p>
-                <p>Main technologies: Scala, Angular, Grafana, Graphite, Cassandra, Spark</p>
+                <p>
+                  Proof of concept to visualize rated CDRs on a heat and world
+                  map.
+                </p>
+                <p>
+                  Main technologies: Scala, Angular, Grafana, Graphite,
+                  Cassandra, Spark
+                </p>
                 <a href="https://github.com/qvantel/orcd">
                   <FontAwesomeIcon icon={faGithub} />
                 </a>
