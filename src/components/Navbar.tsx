@@ -1,13 +1,14 @@
-import React from 'react';
-import './Navbar.scss';
-import { Link } from 'react-scroll';
+"use client";
+
+import "./Navbar.scss";
+import { Link as ScrollLink } from "react-scroll";
 
 export default function Navbar() {
   return (
     <div className="nav">
       <ul className="nav-ul">
         <li>
-          <Link
+          <ScrollLink
             className="nav-link"
             activeClass="active"
             to="about"
@@ -17,10 +18,10 @@ export default function Navbar() {
             duration={500}
           >
             About
-          </Link>
+          </ScrollLink>
         </li>
         <li>
-          <Link
+          <ScrollLink
             className="nav-link"
             activeClass="active"
             to="work"
@@ -30,10 +31,10 @@ export default function Navbar() {
             duration={500}
           >
             Work
-          </Link>
+          </ScrollLink>
         </li>
         <li>
-          <Link
+          <ScrollLink
             className="nav-link"
             activeClass="active"
             to="contact"
@@ -43,7 +44,7 @@ export default function Navbar() {
             duration={500}
           >
             Contact
-          </Link>
+          </ScrollLink>
         </li>
       </ul>
     </div>

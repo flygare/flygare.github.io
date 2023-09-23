@@ -1,13 +1,7 @@
-## Available Scripts
+## Getting Started
 
-### `npm start`
+Run the development server:
 
-Runs the app in the development mode
-
-### `npm test`
-
-Runs the unit tests
-
-### `npm deploy`
-
-Deploy the page
+```bash
+pnpm dev
+```

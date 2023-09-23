@@ -1,5 +1,3 @@
-@import "../config";
-
 .work-image-box {
   min-height: 200px;
   background: rgba(128, 209, 138, 0.1);
@@ -34,7 +32,7 @@
 .read-more {
   font-size: 20px;
   margin-top: 10px;
-  color: $light-green;
+  color: var(--primary-rgb);
   cursor: pointer;
   &:hover {
     opacity: 0.6;
@@ -44,12 +42,23 @@
 .project-info {
   padding: 10px;
   a {
-    color: white;
+    color: var(--foreground-rgb);
     font-size: 22px;
   }
   p {
     @media only screen and (max-width: 600px) {
       font-size: 14px;
     }
+  }
+}
+
+.project-row {
+  display: flex;
+  gap: 16px;
+  .main {
+    width: 60%;
+  }
+  .info {
+    width: 40%;
   }
 }

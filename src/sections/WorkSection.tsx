@@ -1,15 +1,16 @@
-import React, { useState } from "react";
+"use client";
+
+import { useState } from "react";
 import "./WorkSection.scss";
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Graph from "../components/Graph";
+import { Github } from "lucide-react";
 
 export default function WorkSection() {
   const [infoOpen, setInfoOpen] = useState(true);
   return (
     <div>
-      <div className="row">
-        <div className="col-xs-7">
+      <div className="project-row">
+        <div className="main">
           <div className="work-image-box">
             {infoOpen && (
               <div>
@@ -27,13 +28,13 @@ export default function WorkSection() {
                   Cassandra, Spark
                 </p>
                 <a href="https://github.com/qvantel/orcd">
-                  <FontAwesomeIcon icon={faGithub} />
+                  <Github />
                 </a>
               </div>
             )}
           </div>
         </div>
-        <div className="col-xs-5">
+        <div className="info">
           <div className="work-info-box">
             <div className="project-name">orcD</div>
             <div
@@ -50,18 +51,6 @@ export default function WorkSection() {
           </div>
         </div>
       </div>
-      {/*       <div className="row">
-        <div className="col-xs-5">
-          <div className="work-info-box">
-            <div className="project-name">project</div>
-          </div>
-        </div>
-        <div className="col-xs-7">
-          <div className="work-image-box">
-            <div className="work-info-box">coming soon</div>
-          </div>
-        </div>
-      </div> */}
     </div>
   );
 }

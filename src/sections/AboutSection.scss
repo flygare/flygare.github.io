@@ -1,10 +1,8 @@
-@import "../config";
 
 .this-is {
   text-align: left;
   font-size: 22px;
-  color: $light-green;
-  font-weight: lighter;
+  color: var(--primary-rgb);
   margin-bottom: 15px;
 }
 

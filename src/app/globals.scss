@@ -1,17 +1,27 @@
-@import "config";
+:root {
+  --primary-rgb: rgb(137, 227, 147);
+  --foreground-rgb: rgb(255, 255, 255);
+  --background-start-rgb: rgb(57, 57, 60);
+  --background-end-rgb: rgb(38, 37, 45);
+}
 
-.App {
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: var(--foreground-rgb);
+  background: linear-gradient(to bottom right,
+        var(--background-start-rgb),
+        var(--background-end-rgb));
+}
+
+.app {
   box-sizing: border-box;
-  color: white;
   display: table;
   margin: 0 auto;
 }
 
-#root {
-  background: linear-gradient(to bottom right, $dark-gray, $darker-gray);
-}
-
-.App-header {
+.header {
   max-width: 850px;
 }
 
@@ -55,7 +65,6 @@
 p {
   font-size: 16px;
   letter-spacing: 1px;
-  font-weight: lighter;
   line-height: 1.5;
 }
 
@@ -65,8 +74,7 @@ p {
 }
 
 a {
-  font-weight: normal;
   text-decoration: none;
-  color: $light-green;
+  color: var(--primary-rgb);
   cursor: pointer;
 }

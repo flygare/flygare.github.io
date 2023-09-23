@@ -1,7 +1,5 @@
-import React from "react";
 import "./ContactSection.scss";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
+import { Github, Linkedin } from "lucide-react";
 
 export default function ContactSection() {
   return (
@@ -14,10 +12,10 @@ export default function ContactSection() {
       <div className="links">
         <a href="mailto:robin.flygare1@gmail.com">robin.flygare1@gmail.com</a>
         <a href="https://github.com/flygare/">
-          <FontAwesomeIcon icon={faGithub} />
+          <Github />
         </a>
         <a href="https://www.linkedin.com/in/robinflygare/">
-          <FontAwesomeIcon icon={faLinkedinIn} />
+          <Linkedin />
         </a>
       </div>
     </div>
